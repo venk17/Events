@@ -1,0 +1,110 @@
+/* Write your CSS here */
+.registration-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.no-active-event-description {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+}
+
+.registrations-closed-image,
+.yet-to-register-image,
+.registered-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.registrations-closed-heading,
+.registered-heading {
+  color: #323f4b;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.registrations-closed-description,
+.register-description {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.registered-here-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.registered-here-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+  .no-active-event-description {
+    font-size: 1.2rem;
+  }
+
+  .registrations-closed-heading,
+  .registered-heading {
+    font-size: 1.3rem;
+  }
+
+  .view-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .no-active-event-description {
+    font-size: 1rem;
+  }
+
+  .registrations-closed-heading,
+  .registered-heading {
+    font-size: 1.1rem;
+  }
+
+  .registrations-closed-description,
+  .register-description {
+    font-size: 0.9rem;
+  }
+
+  .registered-here-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .view-container {
+    padding: 10px;
+  }
+}

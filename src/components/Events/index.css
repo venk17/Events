@@ -1,0 +1,100 @@
+/* Write your CSS here */
+/* index.css */
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #323f4b;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.events-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #f8fafc;
+}
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .events-container {
+    padding: 15px;
+  }
+  
+  .events-content {
+    padding: 15px;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .events-content {
+    padding: 10px;
+  }
+  
+  .heading {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .events-list {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .events-list {
+    gap: 10px;
+  }
+  
+  .events-container {
+    padding: 8px;
+  }
+  
+  .events-content {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+  
+  .events-list {
+    gap: 8px;
+  }
+}
